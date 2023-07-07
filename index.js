@@ -14,7 +14,6 @@ function refresh(){
     }
     else{
         document.getElementsByTagName("h1")[0].innerText = "player 2 Wins !"
-
     }
 }
 refresh();
