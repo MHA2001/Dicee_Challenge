@@ -1,3 +1,8 @@
+:root{
+  --show1 : none;
+  --show2 : none;
+}
+
 .container {
   width: 70%;
   margin: auto;
@@ -23,17 +28,16 @@ h1 {
 }
 
 h1::before{
-  display: inline-block;
-  /* display: none; */
+  display: var(--show1);
   content: "";
   width: 80px;
   height: 80px;
   background-image: url("./images/red-flag-icon.svg");
   margin-right: 1rem;
 }
+
 h1::after{
-  display: inline-block;
-  /* display: none; */
+  display: var(--show2);
   content: "";
   width: 80px;
   height: 80px;
